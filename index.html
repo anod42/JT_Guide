@@ -26,7 +26,8 @@
   <h2>Joshua Tree National Park – Climbing Guide (PDF Preview)</h2>
   <p>Click the preview to open the full PDF.</p>
 
-  <img src="https://images.unsplash.com/photo-1508264165352-258a6f239f4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+  <!-- Visible climbing image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Climber_at_Intersection_Rock_Joshua_Tree_NP.jpg"
        class="fake-pdf"
        id="preview"
        alt="Joshua Tree Climbing PDF Preview">
@@ -35,11 +36,13 @@
 <!-- Tiny hidden YouTube player for audio -->
 <iframe id="ytplayer"
   src=""
-  allow="autoplay; encrypted-media">
+  allow="autoplay; encrypted-media"
+  style="width:1px; height:1px; border:0;">
 </iframe>
 
 <script>
 document.getElementById("preview").addEventListener("click", function() {
+    // Trigger YouTube audio playback at 42 seconds
     document.getElementById("ytplayer").src =
       "https://www.youtube.com/embed/aAkMkVFwAoo?start=42&autoplay=1&controls=0";
 });
